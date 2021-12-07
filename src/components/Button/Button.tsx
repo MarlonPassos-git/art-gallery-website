@@ -10,26 +10,12 @@ interface ButtonProps {
 
 export function Button({ text, arrowSide }: ButtonProps) {
 
-    const [backgroundColor, setBackgroundColor] = React.useState(['var(--black)', 'var(--orange)'])
-
-    function handleBackgroundColorChange() {
-        const coresReversas = Array.from(backgroundColor).reverse()
-        
-        setBackgroundColor(coresReversas)
-        
-    }
-
-    const arrow = (arrowSide === 'right') ? arrowRight : arrowLeft
+    const arrow = (arrowSide === 'right') ? arrowRight : arrowLeft;
 
     return (
-        <Container
-            backgroundColor={backgroundColor[0]}
-            onMouseOver={handleBackgroundColorChange}
-            onMouseOut={ handleBackgroundColorChange }
-        
-        >
+        <Container>
             <Text>{text}</Text>
-            <ContainerImg backgroundColor={ backgroundColor[1] } >
+            <ContainerImg  >
                 <img src={ arrow } alt="" />
             </ContainerImg>
         </Container>

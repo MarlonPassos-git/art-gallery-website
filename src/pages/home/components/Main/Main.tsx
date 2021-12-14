@@ -14,6 +14,7 @@ import imgGrid_2_desktop from '../../../../assets/desktop/image-grid-2.jpg'
 import imgGrid_3_desktop from '../../../../assets/desktop/image-grid-3.jpg'
 import BlackCard from '../BlackCard/BlackCard'
 import { progressive, progressiveClamp } from '../../../../progressive/progressive'
+import { breakpoints } from '../../../../styles/Variaveis'
 
 
 
@@ -22,8 +23,12 @@ export default function Main() {
 
     const h2style = `
         align-self: start;
-        margin-top: ${progressive(36, 60, 768)};
-        max-width: ${progressiveClamp(223, 350, 768)};
+        
+
+        @media (min-width: ${breakpoints._mobile}) {
+            margin-top: ${progressive(36, 60, 768)};
+            max-width: ${progressiveClamp(223, 350, 768)};
+        }
     `
         
     

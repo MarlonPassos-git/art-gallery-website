@@ -2,13 +2,13 @@ import { progressiveClamp } from "../progressive/progressive"
 
 export const breakpoints  = {
     
-        mobile: '375px',
+        mobile: '550px',
         tablet: '768px',
         desktop: '1024px',
-        _mobile: '376px',
+        _mobile: '551px',
         _tablet: '769px',
         _desktop: '1024px',
-        __mobile: 376,
+        __mobile: 551,
         __tablet: 769,
         __desktop: 1024,
     

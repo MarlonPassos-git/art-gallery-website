@@ -5,7 +5,11 @@ import { SocialList } from '../SocialList/SocialList'
 import { Container, Title } from './style'
 
 interface FooterProps { 
-    theme: any
+    theme: {
+        background: string,
+        textColor: string,
+        hoverIcon: string,
+    }
 }
 
 export default function Footer({ theme }: FooterProps) {
